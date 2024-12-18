@@ -1,0 +1,72 @@
+/* Style général de la page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+header {
+    background: rgba(3, 13, 107, 0.9); /* Ajout d'une transparence pour un effet plus léger */
+    color: #fff;
+    text-align: center;
+    padding: 2em 0;
+    border-bottom: 5px solid #ff6f61; /* Ajout d'une ligne décorative */
+}
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    color: #f0f0f0;
+    text-decoration: none;
+    padding: 1em 2em;
+    display: block;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a:hover {
+    background: #ff6f61;
+    transform: scale(1.1); /* Effet de zoom au survol */
+}
+/* Conteneur de la grille */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 colonnes */
+    gap: 20px; /* Espacement entre les cases */
+    padding: 20px;
+}
+
+/* Style pour chaque case de la grille */
+.grid-item {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 10px;
+}
+
+.grid-item h3 {
+    margin: 10px 0;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.grid-item p {
+    margin-top: 10px;
+    font-size: 1em;
+    color: #666;
+}
+
+/* Responsivité : pour les écrans plus petits, changer la grille en 2 colonnes */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 colonnes sur petits écrans */
+    }
+}
