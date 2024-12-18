@@ -1,0 +1,33 @@
+
+body {
+    background-image: url('Image/Capture.PNG'); /* Image de fond stylisée */
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    background: rgba(0, 0, 0, 0.7); /* Fond sombre semi-transparent */
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 900px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+h2, p {
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #ffd700;
+}
+
+p {
+    color: #ccc;
+}

@@ -16,7 +16,7 @@ h1, h2 {
 }
 
 header {
-    background: rgba(3, 13, 107, 0.9); /* Ajout d'une transparence pour un effet plus léger */
+    background: rgba(8, 8, 10, 0.9); /* Ajout d'une transparence pour un effet plus léger */
     color: #fff;
     text-align: center;
     padding: 2em 0;
@@ -35,7 +35,6 @@ nav ul {
     padding: 0;
     display: flex;
     justify-content: center;
-    border-top: 3px solid #ff6f61; /* Ligne fine en haut */
 }
 
 nav ul li {
@@ -52,16 +51,16 @@ nav ul li a {
 
 nav ul li a:hover {
     background: #ff6f61;
-    transform: scale(1.1); /* Effet de zoom au survol */
+    transform: scale(1.1);
 }
 
 main {
-    padding: 3em;
-    max-width: 900px;
+    padding: 6em;
+    max-width: 1000px;
     margin: 2em auto;
-    background: rgba(255, 255, 255, 0.95); /* Fond léger pour le contraste */
     border-radius: 8px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    background-color: black;
 }
 
 h2 {
