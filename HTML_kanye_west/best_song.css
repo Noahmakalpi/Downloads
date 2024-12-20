@@ -1,0 +1,70 @@
+/* BODY : Orientation verticale */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Remplit toute la hauteur de la fenêtre */
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* HEADER ET FOOTER : Pleine largeur */
+header, footer {
+    width: 100%;
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+/* MAIN : Occupe l'espace disponible */
+main {
+    flex-grow: 1;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Conteneur responsive pour les vidéos */
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Colonnes adaptatives */
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto; /* Centrer le conteneur */
+}
+
+/* Style des cases vidéos */
+.video-box {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+/* Titre des vidéos */
+.video-box h2 {
+    margin: 0 0 10px;
+    font-size: 1.2em;
+    color: #333;
+}
+
+/* Description des vidéos */
+.video-box p {
+    font-size: 0.95em;
+    color: #666;
+}
+
+/* Vidéos YouTube */
+iframe {
+    width: 100%;
+    height: 200px;
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+

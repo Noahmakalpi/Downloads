@@ -12,7 +12,6 @@ body {
 
 /* Header */
 header {
-    background: #5e290c;
     color: #fff;
     text-align: center;
     padding: 1em 0;
@@ -122,6 +121,15 @@ main {
     color: #666;
 }
 
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive */
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto; /* Centrer la grille */
+}
+
 /* Vision Artistique */
 .vision {
     background: #910f26;
@@ -159,9 +167,11 @@ main {
 
 /* Footer */
 footer {
+    bottom: 0;
     text-align: center;
     padding: 10px;
     background: #222;
+    width: 100%;
     color: #fff;
     margin-top: 20px;
 }
